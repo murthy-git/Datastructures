@@ -27,7 +27,6 @@ class MaxHeap():
                 self.__swap(parent, index)
                 self.__traverseUp(parent)
 
-
     def push(self, element):
         self.heap.append(element)
         index = self.heap.index(element)
