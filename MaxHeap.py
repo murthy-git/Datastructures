@@ -29,7 +29,7 @@ class MaxHeap():
 
     def push(self, element):
         self.heap.append(element)
-        index = self.heap.index(element)
+        index = len(selh.heap)-1
         if not index:
             return 1
         else:
