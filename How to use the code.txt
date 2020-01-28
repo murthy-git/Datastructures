@@ -1,0 +1,22 @@
+How to use the HEAP code:
+
+Creating a new Min/Max heap:
+      To create a new Min or Max heap, you have to create an object for the respective class. you can give elements while creating object as class parameters or
+      you can use push function to add new elements to the heap -> object = MaxHeap(1,4,7)
+
+push(*elements): 
+      This function is used to add elements to the heap. This function takes any number of elements from 0 to infinity as argument, adds each element 
+      to the heap and re-arranges the heap -> object.push(3,8)
+
+pop(): 
+      This function is used to pop the first element from the heap. This function takes no arguments. -> object.pop()
+
+peek(): 
+      This function is used to see the first element of the heap -> object.peek()
+
+Note: 
+      If you want to see the entire heap, call _heap variable -> print(object._heap)
+      
+      
+      
+
