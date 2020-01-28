@@ -63,7 +63,7 @@ class MaxHeap(__HeapOperations):
                 self._traverseUp(index, 'max')
         return self._heap
 
-    # This function pops the given element/elements from the heap and rearranges the heap
+    # This function pops the first element from the heap and rearranges the heap
     def pop(self):
         if len(self._heap):
             self._swap(0, len(self._heap)-1)
@@ -97,7 +97,7 @@ class MinHeap(__HeapOperations):
                 self._traverseUp(index, 'min')
         return self._heap
 
-    # This function pops the given element/elements from the heap and rearranges the heap
+    # This function pops the first element from the heap and rearranges the heap
     def pop(self):
         if len(self._heap):
             self._swap(0, len(self._heap)-1)
@@ -114,3 +114,6 @@ class MinHeap(__HeapOperations):
         else:
             return "The _heap is empty."
 
+a = MaxHeap(1,4,7)
+a.push(3,8)
+print(a._heap)
